@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.signButton {
+  width: 100%;
+  background-color: $blueColor;
+  color: $whiteColor;
+  border: 0;
+  height: 3rem;
+  border-radius: 5px;
+  font-family: $MerriweatherFont;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+@import "../../styles/sharedStyles.scss";
+
+.signUp {
+  @extend .authBlock;
+
+  &__block {
+    @extend .authTextPart;
+    order: 1;
+
+    .signUpMethods {
+      .signUpForm {
+        margin-top: 5vh;
+      }
+    }
+  }
+  .photo {
+    order: 0;
+  }
+}

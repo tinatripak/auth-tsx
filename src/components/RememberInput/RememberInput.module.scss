@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.rememberMe {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  label {
+    font-size: 13px;
+  }
+  input {
+    accent-color: $blueColor;
+    cursor: pointer;
+  }
+}

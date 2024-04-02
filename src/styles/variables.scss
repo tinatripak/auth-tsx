@@ -1,0 +1,26 @@
+$blueColor: #4a62ba;
+$blackColor: #000;
+$whiteColor: #fff;
+$bgColor: #f0f1f5;
+$googleBorderColor: rgb(183, 183, 183);
+$fieldPadding: 16px;
+$grayColor: rgb(125, 125, 125);
+$inputBorderColor: rgb(128, 128, 128);
+
+$MerriweatherFont: "Merriweather", serif;
+
+@mixin breakpoint($point) {
+  @if $point == sm {
+    @media (max-width: 500px) {
+      @content;
+    }
+  } @else if $point == md {
+    @media (max-width: 850px) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}

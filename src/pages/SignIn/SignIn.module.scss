@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+@import "../../styles/sharedStyles.scss";
+
+.signIn {
+  @extend .authBlock;
+
+  &__block {
+    @extend .authTextPart;
+    order: 0;
+
+    @include breakpoint(lg) {
+      order: 1;
+    }
+
+    .signInMethods {
+      .signInForm {
+        margin-top: 5vh;
+
+        .passwordOptions {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .forgetPassword {
+            font-size: 13px;
+            color: $blueColor;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+      .orMethod {
+        text-align: center;
+        color: $grayColor;
+        margin: 4vh 0;
+      }
+    }
+  }
+}

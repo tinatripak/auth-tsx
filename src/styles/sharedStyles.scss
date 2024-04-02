@@ -1,0 +1,35 @@
+@import "./variables.scss";
+
+.authBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  min-height: 80vh;
+  font-family: $MerriweatherFont;
+  font-weight: 400;
+  padding: 10vh 0;
+
+  @include breakpoint(lg) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.authTextPart {
+  background-color: $whiteColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 5rem;
+
+  @include breakpoint(md) {
+    padding: 1rem 3rem;
+  }
+
+  @include breakpoint(sm) {
+    padding: 2rem 1rem;
+  }
+}

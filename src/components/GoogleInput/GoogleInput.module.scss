@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+
+.signInGoogle {
+  button {
+    width: 100%;
+    background-color: transparent;
+    color: $blackColor;
+    border: 1px solid $googleBorderColor;
+    height: 3rem;
+    border-radius: 5px;
+    font-family: $MerriweatherFont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+}
